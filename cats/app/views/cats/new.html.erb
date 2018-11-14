@@ -1,0 +1,27 @@
+<form action="<%= cats_url %>" method="post">
+  
+   <label for="birth_date">birth_date:
+     <input id="birth_date" type="date" name="cats[birth_date]" value="<%= @cats.birth_date %>">
+   </label>
+   <br>
+   <label for="color">Color:
+     <input id="color"type="text"name="cats[color]"value="<%=@cats.color%>">
+   </label>
+   <br>
+   <label for="name">Name:
+     <input id="name" type="text"name="cats[name]"value="<%=@cats.name%>">
+   </label>
+   <br>
+   
+   <label for="sex">Sex:
+     <input id="sex" type="text"name="cats[sex]"value="<%=@cats.sex%>">
+   </label>
+   <br>
+   
+  
+   <label for="description">Description:
+     <input id="description" type="text"name="cats[description]"value="<%=@cats.description%>">
+   </label>
+   <br>
+   <input type="submit"value="Create Cat">
+ </form>
